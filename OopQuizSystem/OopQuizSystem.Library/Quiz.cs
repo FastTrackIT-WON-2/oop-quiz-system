@@ -21,5 +21,16 @@ namespace OopQuizSystem.Library
         public Question[] Questions { get; }
 
         public decimal Score { get; private set; }
+
+        public void UpdateScore()
+        {
+            decimal score = decimal.Zero;
+            foreach (Question q in Questions)
+            {
+                score += q.Score;
+            }
+
+            Score = score;
+        }
     }
 }

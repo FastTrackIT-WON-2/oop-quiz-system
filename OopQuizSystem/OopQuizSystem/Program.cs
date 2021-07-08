@@ -13,15 +13,10 @@ namespace OopQuizSystem
             // Alegand un set de intrebari din baza de date, sa putem creea un Quiz
             Quiz quiz = QuestionsDatabase.GenerateQuiz(2);
 
-            // Cum facem rezolvarea unui quiz?
-            //  - pentru fiecare intrebare
-            //      - afisam intrebarea
-            //      - afisam optiunile
-            //      - solicitam userului sa introduca optiunile de raspuns
-            //      - evaluam raspunsul si ajustam scorul
-            //  - afisam scorul final
+            // John Doe is preparing to answer the quiz
+            QuizRespondent johnDoe = new QuizRespondent("John Doe", quiz);
 
-            Console.WriteLine("Hello World!");
+            johnDoe.Resolve(new ConsoleGraphicalInterface());
         }
 
         private static void InitializeQuestionsDatabase()
