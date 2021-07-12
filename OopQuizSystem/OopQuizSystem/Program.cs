@@ -21,11 +21,10 @@ namespace OopQuizSystem
 
         private static void InitializeQuestionsDatabase()
         {
-            QuestionsDatabase.Initialize(new[]
+            QuestionsDatabase.Initialize(new Question[]
             {
-                new Question(
+                new SingleSelectionQuestion(
                     1,
-                    QuestionType.SingleSelection,
                     "What is the best language?",
                     new[]
                     {
@@ -34,9 +33,8 @@ namespace OopQuizSystem
                         new Option("Phyton", false),
                     }),
 
-                new Question(
+                new MultipleSelectionQuestion(
                     2,
-                    QuestionType.MultipleSelection,
                     "What is the best database system?",
                     new[]
                     {
@@ -45,9 +43,8 @@ namespace OopQuizSystem
                         new Option("Oracle", true)
                     }),
 
-                new Question(
+                new MultipleSelectionQuestion(
                     3,
-                    QuestionType.MultipleSelection,
                     "What is the best mobile platform?",
                     new[]
                     {
@@ -55,9 +52,8 @@ namespace OopQuizSystem
                         new Option("iOS", true)
                     }),
 
-                new Question(
+                new MultipleSelectionQuestion(
                     4,
-                    QuestionType.MultipleSelection,
                     "What is the best OS?",
                     new[]
                     {
