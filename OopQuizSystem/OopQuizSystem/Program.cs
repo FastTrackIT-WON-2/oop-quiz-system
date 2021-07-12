@@ -36,32 +36,32 @@ namespace OopQuizSystem
 
                 new Question(
                     2,
-                    QuestionType.SingleSelection,
+                    QuestionType.MultipleSelection,
                     "What is the best database system?",
                     new[]
                     {
                         new Option("MySQL", false),
                         new Option("SQL Server", true),
-                        new Option("Oracle", false)
+                        new Option("Oracle", true)
                     }),
 
                 new Question(
                     3,
-                    QuestionType.SingleSelection,
+                    QuestionType.MultipleSelection,
                     "What is the best mobile platform?",
                     new[]
                     {
                         new Option("Android", true),
-                        new Option("iOS", false)
+                        new Option("iOS", true)
                     }),
 
                 new Question(
                     4,
-                    QuestionType.SingleSelection,
+                    QuestionType.MultipleSelection,
                     "What is the best OS?",
                     new[]
                     {
-                        new Option("Windows 10", false),
+                        new Option("Windows 10", true),
                         new Option("Mac OS", false),
                         new Option("Linux", true)
                     })
